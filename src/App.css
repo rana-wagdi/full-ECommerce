@@ -56,9 +56,9 @@
 img{
   border-radius: 0.5rem;
 }
-img .medium {
-  max-width: 29rem;
-  width: 100%;
+.medium{
+  width: 17rem;
+  height: 22rem;
 }
 .main .card {
   border: 0.1rem #c0c0c0 solid;
@@ -74,6 +74,10 @@ img .medium {
 }
 .price{
   font-size: 2rem;
+}
+.rating span{
+  color: #f0c040;
+  margin: 0.1rem;
 }
 .main h2{
   font-size: 1.6rem;

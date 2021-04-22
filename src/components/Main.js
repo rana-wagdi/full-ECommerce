@@ -4,35 +4,24 @@ function Main() {
     return(
         <main className='main'>
             <div className='row center'>
-           {
-               Data.products.map((products)=>(
-                   <div className='card'>
-                       <a href=''>
-                           <img className='medium' src='./images/product/product-1.jpg'  />
+           {Data.products.map((product)=>(
+                   <div key={product._id} className='card'>
+                       <a href={`/product/${product._id}`}>
+                           <img className='medium' src={product.image} alt={product.name} />
                        </a>
                 <div className='card-body'>
-                <a href=''>
+                <a href={`/product/${product._id}`}>
                 <h2>Nike Slim Shirts</h2>
                 </a>
                 <div className='rating'>
-                <span>
-                    <i className='fa fa-star'></i>
-                </span>
-                <span>
-                    <i className='fa fa-star'></i>
-                </span>
-                <span>
-                    <i className='fa fa-star'></i>
-                </span>
-                <span>
-                    <i className='fa fa-star'></i>
-                </span>
-                <span>
-                    <i className='fa fa-star'></i>
-                </span>
+                <span><i className='fa fa-star'></i> </span>
+                <span><i className='fa fa-star'></i></span>
+                <span><i className='fa fa-star'></i></span>
+                <span><i className='fa fa-star'></i></span>
+                <span><i className='fa fa-star-half-o'></i></span>
                 </div>
                 <div className='price'>
-                $120
+                ${product.price}
                 </div>
                 </div>
                    </div>
@@ -41,5 +30,6 @@ function Main() {
             </div>
         </main>
     )
+        
 }
 export default Main;
