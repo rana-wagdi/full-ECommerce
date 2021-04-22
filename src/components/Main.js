@@ -1,18 +1,19 @@
 import React from 'react';
-
+import Data from './Data';
 function Main() {
     return(
         <main className='main'>
             <div className='row center'>
-            <ul>
-                <li>product</li>
-                <li>product</li>
-                <li>product</li>
-                <li>product</li>
-                <li>product</li>
-                <li>product</li>
+           {
+               Data.products.map((products)=>(
+                   <div className='card'>
+                       <a href=''>
+                           <img className='medium' src='./images/product/product-1.jpg'  />
+                       </a>
 
-            </ul>
+                   </div>
+               ))
+           }
             </div>
         </main>
     )
