@@ -79,6 +79,9 @@ img{
   color: #f0c040;
   margin: 0.1rem;
 }
+.rating span:last-child {
+  color: #404040;
+}
 .main h2{
   font-size: 1.6rem;
   padding: 1rem 0;
