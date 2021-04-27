@@ -38,15 +38,19 @@
 }
 .header a{
   text-decoration: none;
-  color: #ffffff;
+  color: #fffffff8;
   padding: 1rem;
+   
 }
 .header a:hover{
   color: #ff8000;
 }
 .header .brand{
-  font-size: 3rem;
+  font-size: 2.5rem  ;
   font-weight: bold;
+}
+.header-nav{
+  font-size: 1.5rem;
 }
 /********Main******/
 .main{
@@ -73,17 +77,19 @@ img{
   margin-bottom: 0.5rem;
 }
 .price{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .rating span{
   color: #f0c040;
   margin: 0.1rem;
+  font-size: 1.4rem;
 }
 .rating span:last-child {
   color: #404040;
+  font-size: 1.2rem;
 }
 .main h2{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 1rem 0;
 }
 /********Footer******/

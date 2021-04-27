@@ -7,7 +7,7 @@ function Header() {
             <div className='brand'>
                 <a href="/">amazona</a>
             </div>
-            <div>
+            <div className="header-nav">
                 <a href="/cart">Cart</a>
                 <a href="/sign">Sign In</a>
             </div>
