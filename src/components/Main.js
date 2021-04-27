@@ -1,32 +1,17 @@
 import React from 'react';
-import Rating from './Rating';
+import { BrowserRouter, Route} from 'react-router-dom';
+import HomeScreen from '../screens/HomeScreen';
+import ProductScreen from '../screens/ProductScreen';
 
-import Data from './Data';
 function Main() {
     return(
+        <BrowserRouter>
         <main className='main'>
-            <div className='row center'>
-           {Data.products.map((product)=>(
-            <div key={product._id} className='card'>
-             <a href={`/product/${product._id}`}>
-            <img className='medium' src={product.image} alt={product.name} />
-         </a>
-            <div className='card-body'>
-                <a href={`/product/${product._id}`}>
-                <h2>Nike Slim Shirts</h2>
-                </a>
-                <Rating rating={product.rating} numReviews={product.numReviews} />
-                   
-                            <div className='price'>
-                        ${product.price}
-                        </div>
-                </div>
-    </div>
-
-               ))
-           }
-            </div>
+        <Route path='/product/:id' component={ProductScreen}></Route>
+        <Route path='/' component={HomeScreen} exact></Route>
+          
         </main>
+        </BrowserRouter>
     )
         
 }
