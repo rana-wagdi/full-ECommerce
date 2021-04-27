@@ -12,7 +12,7 @@ const ProductScreen = (props) =>  {
     return (
         <div>
              <Link to="/">Back to result</Link>
-        <div className='row'>
+        <div className='row top'>
         <div className='col-2'>
         <img className="large" src={product.image} alt={product.name}></img>
             </div>
